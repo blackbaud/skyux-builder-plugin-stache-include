@@ -1,0 +1,22 @@
+{
+  "name": "skyux-builder-plugin-stache-includes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "includes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackbaud/skyux-builder-plugin-stache-includes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackbaud/skyux-builder-plugin-stache-includes/issues"
+  },
+  "homepage": "https://github.com/blackbaud/skyux-builder-plugin-stache-includes#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}

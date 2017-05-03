@@ -1,5 +1,5 @@
 {
-  "name": "skyux-builder-plugin-stache-includes",
+  "name": "@blackbaud/skyux-builder-plugin-stache-includes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

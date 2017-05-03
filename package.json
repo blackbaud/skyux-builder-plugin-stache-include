@@ -1,22 +1,30 @@
 {
-  "name": "@blackbaud/skyux-builder-plugin-stache-includes",
+  "name": "@blackbaud/skyux-builder-plugin-stache-include",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "coverage": "istanbul cover -x 'src/*.spec.js' --report=html jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": "npm run lint && npm run coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blackbaud/skyux-builder-plugin-stache-includes.git"
+    "url": "git+https://github.com/blackbaud/skyux-builder-plugin-stache-include.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/blackbaud/skyux-builder-plugin-stache-includes/issues"
+    "url": "https://github.com/blackbaud/skyux-builder-plugin-stache-include/issues"
   },
-  "homepage": "https://github.com/blackbaud/skyux-builder-plugin-stache-includes#readme",
+  "homepage": "https://github.com/blackbaud/skyux-builder-plugin-stache-include#readme",
   "dependencies": {
     "cheerio": "^0.22.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mock-fs": "^4.3.0"
   }
 }

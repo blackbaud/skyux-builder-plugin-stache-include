@@ -14,7 +14,7 @@ describe('Include Plugin', () => {
   afterAll(() => {
     mock.restore();
   });
-  
+
   it('should contain a preload hook', () => {
     expect(plugin.preload).toBeDefined();
   });
@@ -41,5 +41,17 @@ describe('Include Plugin', () => {
     const path = 'foo.html';
     let result = plugin.preload(content, path);
     expect(result).toContain(`<stache-include fileName="test.html"><h1>Test</h1></stache-include>`);
+  });
+
+  it('should throw an error if the file is not found.', () => {
+    const content = `
+      <stache-include fileName="error.html">
+      </stache-include>
+    `;
+    const path = 'foo.html';
+    let result = function () {
+      return plugin.preload(content,path);
+    }
+    expect(result).toThrow();
   });
 });

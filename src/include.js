@@ -20,7 +20,17 @@ const preload = (content, resourcePath) => {
     includes.each(function () {
       let fileName = $(this).attr('fileName');
       let filePath = path.join(root, fileName);
-      let file = $(fs.readFileSync(filePath, 'utf8'));
+      let file;
+
+      try {
+        file = $(fs.readFileSync(filePath, 'utf8'));
+      } catch (error) {
+        /* eslint-disable no-console */
+        console.error('INCLUDE ERROR: ', error.message);
+        throw error;
+        /* eslint-enable */
+      }
+
       $(this).text(file);
     });
 

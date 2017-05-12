@@ -25,10 +25,8 @@ const preload = (content, resourcePath) => {
       try {
         file = $(fs.readFileSync(filePath, 'utf8'));
       } catch (error) {
-        /* eslint-disable no-console */
-        console.error('INCLUDE ERROR: ', error.message);
+        console.error('[SKY UX Plugin Error: stache-include: ', error.message);
         throw error;
-        /* eslint-enable */
       }
 
       $(this).text(file);

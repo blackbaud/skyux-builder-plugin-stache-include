@@ -1,7 +1,7 @@
 {
   "name": "@blackbaud/skyux-builder-plugin-stache-include",
   "version": "1.0.0",
-  "description": "",
+  "description": "A SKY UX Builder plugin for Stache Include component",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover -x 'src/*.spec.js' --report=html jasmine JASMINE_CONFIG_PATH=jasmine.json",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-standard": "^3.0.1",
+    "fs-extra": "^3.0.1",
     "istanbul": "^0.4.5",
     "jasmine": "^2.6.0",
     "mock-fs": "^4.3.0"

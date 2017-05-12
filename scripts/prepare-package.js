@@ -13,7 +13,7 @@ function createDist() {
     fs.mkdirSync(distPath);
   }
 
-  fs.copySync(path.join(rootPath, 'src', 'code-block.js'), path.join(distPath, 'index.js'));
+  fs.copySync(path.join(rootPath, 'src', 'include.js'), path.join(distPath, 'index.js'));
 }
 
 function makePackageFileForDist() {

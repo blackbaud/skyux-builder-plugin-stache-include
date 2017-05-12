@@ -7,7 +7,6 @@ This [SKY UX Builder](https://github.com/blackbaud/skyux-builder) plugin takes H
 
 ## Installation
 
-
 ```
 npm install --save @blackbaud/skyux-builder-plugin-stache-include
 ```

@@ -1,7 +1,9 @@
-# Stache Include Plugin
+# Stache Include Plugin (Deprecated)
 
 [![npm](https://img.shields.io/npm/v/@blackbaud/skyux-builder-plugin-stache-include.svg)](https://www.npmjs.com/package/@blackbaud/skyux-builder-plugin-stache-include)
 [![status](https://travis-ci.org/blackbaud/skyux-builder-plugin-stache-include.svg?branch=master)](https://travis-ci.org/blackbaud/skyux-builder-plugin-stache-include)
+
+### NOTE: This plugin has been deprecated in favor of an [all-inclusive plugin](https://github.com/blackbaud/skyux-builder-plugin-stache).
 
 This [SKY UX Builder](https://github.com/blackbaud/skyux-builder) plugin takes HTML files and injects them where referenced in any template file in a SKY UX app. This plugin is intended to be used with [Stache 2 Components](https://github.com/blackbaud/stache2).
 
